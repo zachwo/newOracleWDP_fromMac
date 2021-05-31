@@ -7,12 +7,12 @@ public class Commander {
     //2
     private static final Commander cmd = new Commander();
 
-    //3
+    //1
     private Commander(){
         System.out.println("构建了一个commander");
     }
 
-    //1
+    //3
     public static Commander getInstance(){
         return cmd;
     }
