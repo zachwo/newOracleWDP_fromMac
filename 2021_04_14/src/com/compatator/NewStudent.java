@@ -1,6 +1,6 @@
-package com.comparable;
+package com.compatator;
 
-public class Student implements Comparable{
+public class NewStudent {
     private String sno;
     private int age;
     private String name;
@@ -8,10 +8,10 @@ public class Student implements Comparable{
     private String sex;
     private int fen;
 
-    public Student() {
+    public NewStudent() {
     }
 
-    public Student(String sno, int age, String name, String banji, String sex, int fen) {
+    public NewStudent(String sno, int age, String name, String banji, String sex, int fen) {
         this.sno = sno;
         this.age = age;
         this.name = name;
@@ -30,15 +30,6 @@ public class Student implements Comparable{
                 ", sex='" + sex + '\'' +
                 ", fen=" + fen +
                 '}';
-    }
-
-    @Override
-    /**
-     * 自定义比较规则
-     */
-    public int compareTo(Object o) {
-        Student s = (Student) o;
-        return fen-s.getFen();
     }
 
     public String getSno() {
@@ -88,5 +79,4 @@ public class Student implements Comparable{
     public void setFen(int fen) {
         this.fen = fen;
     }
-
 }
